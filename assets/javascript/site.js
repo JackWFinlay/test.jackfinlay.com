@@ -47,7 +47,7 @@ $(document).ready(function(){
 
 	});
 
-	$(document).on('click', 'a', function(event){
+	$("a.anchor").not(".button").click( function(event) {
     	event.preventDefault();
 		
 		$('html, body').animate({
